@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Next.js is installed in portofilo_website, please run it from there.
+
 First, run the development server:
 
 ```bash
