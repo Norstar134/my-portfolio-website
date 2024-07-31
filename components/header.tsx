@@ -31,18 +31,30 @@ const Header: React.FC = () => {
               </ul>
             </div>
           </nav>
-          <nav className="lg:hidden md:hidden flex flex-col items gap-1">
+          <nav className="lg:hidden md:hidden flex flex-col gap-1 z-50 relative">
             <button onClick={() => setShowMenu(!showMenu)}
-              className="lg:hidden font-bold text-xl hover:text-gray-500">
+              className="lg:hidden font-bold text-xl hover:text-gray-500 duration-300">
               {showMenu ? <span className="material-icons">close</span>:<span className="material-icons">menu</span>}
             </button>
             {showMenu && (
               <>
-              <a href="#home" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
-              <a href="#about" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-              <a href="#skills" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
-              <a href="projects" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
-              <a href="#contact" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              <ul className="absolute bg-white top-8 -left-20 shadow-sm border-2 hover:bg-slate-400">
+                <li>
+                  <a href="#home" className="block py-5 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" onClick={() => setShowMenu(false)}>Home</a>
+                </li>
+                <li>
+                  <a href="#about" className="block py-5 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" onClick={() => setShowMenu(false)}>About</a>
+                </li>
+                <li>
+                  <a href="#skills" className="block py-5 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" onClick={() => setShowMenu(false)}>Skills</a> 
+                </li>
+                <li>
+                  <a href="#projects" className="block py-5 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" onClick={() => setShowMenu(false)}>Projects</a>
+                </li>
+                <li>
+                  <a href="#contact" className="block py-5 px-6 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" onClick={() => setShowMenu(false)}>Contact</a>
+                </li>
+              </ul>
               </>
             )}
           </nav>

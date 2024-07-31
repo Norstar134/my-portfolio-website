@@ -1,12 +1,14 @@
 //https://tailwindcss.com/docs/responsive-design
+//https://www.w3schools.com/colors/colors_picker.asp
+//https://tailwindcss.com/docs/dark-mode
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <main className="bg-white dark:bg-slate-800">
       <div className="container mx-auto">
         <section id="home" className="flex flex-col md:h-auto sm:justify-between items-center sm:flex-row z-10">
         <div className="w-0">
-          <span className="ml-32 mt-16 absolute top-5 -left-32 -z-0">
+          <span className="ml-32 mt-16 absolute md:top-5 md:-left-32 -z-0 scale-50 md:scale-100 -top-2 -left-36 md:opacity-100 opacity-60">
             <svg width="48" height="95" viewBox="0 0 48 95" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="0.5" cy="47.5" r="47.5" fill="url(#paint0_radial_6:121"></circle>
               <defs>
@@ -19,44 +21,7 @@ export default function Home() {
             </svg>
           </span>
         </div>
-        {/*
-        <div className="grid-span-1 md:grid-span-2 pl-36 mx-auto">
-          <div>
-            <div className="flex">
-              <div className="pt-40">
-                <h1 className="text-blue-500 pt-10 break-normal font-bold">Hi! I'm<br />
-                  <span className="text-3xl text-black"> Deanna Woodhouse-Hawkins</span>
-                </h1>
-                <h2 className="text-2xl font-semibold">Full Stack Developer</h2>
-                <p className="text-lg pt-10 text-slate-500">And recent graduate of the Open University, studying Computing and IT!</p>
-                <div className="pt-10 flex-col">
-                  <ul className="flex flex-wrap text-sm font-medium text-center pb-10 items-start flex-grow">
-                    <li className="me-10 pl-5">
-                      <a href="#contact" className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-4 px-7 rounded-full">Contact Me </a>
-                    </li>
-                    <li>
-                      <a href="#" className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-4 px-7 rounded-full">Download CV</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <div className="relative w-full h-full flex-1">
-                  <img src="https://www.pngall.com/wp-content/uploads/4/Thinking-Woman-PNG-Picture.png" alt="image of me(eventually)" className="relative pl-48 z-10 flex-shrink-0 resize-none h-auto"></img>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-0">
-          <span className="justify-end mt-4 md:bottom-0 md:right-0 pb-52 absolute">
-            <svg width="491" height="490" viewBox="0 0 491 490" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="356.5" cy="356.5" r="356.5" fill="blue" />
-            </svg>
-          </span>
-        </div>
-        */}
-        <div className="w-full md:w-1/3 text-left">
+        <div className="w-full md:w-1/3 text-left md:pt-0 pt-10">
           <h1 className="text-blue-500 pt-10 break-normal font-bold">Hi! I'm<br />
           <span className="text-3xl text-black"> Deanna Woodhouse-Hawkins</span>
           </h1>
@@ -65,39 +30,39 @@ export default function Home() {
           <div className="pt-10 flex-col">
             <ul className="flex flex-wrap text-sm font-medium text-center pb-10 items-start flex-grow">
               <li className="me-10 pl-5">
-                <a href="#contact" className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-4 px-7 rounded-full">Contact Me </a>
+                <a href="#contact" className="bg-[#80ccff] hover:bg-[#00ace6] text-white font-bold py-4 px-7 rounded-full">Contact Me </a>
               </li>
               <li>
-                <a href="#" className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-4 px-7 rounded-full">Download CV</a>
+                <a href="#" className="bg-[#80ccff] hover:bg-[#00ace6] text-white font-bold py-4 px-7 rounded-full">Download CV</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="w-full sm:w2/3 text-right float-right mt-8 sm:mt-0 md:pl-20">
+        <div className="w-full sm:w2/3 text-right float-right mt-8 sm:mt-0 md:pl-20 md:pt-2 md:pb-0">
           <img src="https://www.pngall.com/wp-content/uploads/4/Thinking-Woman-PNG-Picture.png" alt="image of me(eventually)" className="relative z-10 flex-shrink-0 resize-none h-auto md:pl-48"></img>
         </div>
 
         <div className="w-0">
-          <span className="justify-end mt-4 -bottom-28 -right-14 sm:bottom-10 sm:right-16 pb-52 absolute scale-75 md:scale-125">
+          <span className="justify-end mt-4 -bottom-40 -right-14 md:bottom-10 md:right-16 pb-52 absolute scale-75 md:scale-125">
             <svg width="491" height="490" viewBox="0 0 491 490" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="356.5" cy="356.5" r="356.5" fill="blue" />
+              <circle cx="356.5" cy="356.5" r="356.5" fill="#80ccff" />
             </svg>
           </span>
         </div>
       </section>
 
       <section id="about" className="mt-8 sm:mt-10 flex justify-center">
-        <div className="pt-16">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="pt-16 md:pl-0 pl-5">
+          <div className="grid grid-cols-2 gap-1">
             <div className="">
-              <span className="text-3xl text-blue-600 font-bold">ABOUT ME</span>
+              <span className="text-3xl text-[#80ccff] font-bold">ABOUT ME</span>
               <h2 className="text-2xl text-black font-semibold pt-10">Phrase Here</h2>
-              <p className="text-lg pt-5 pr-44">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui ligula, malesuada vel convallis in, tincidunt ut mi Vestibulum sit amet.</p>
+              <p className="md:text-lg pt-5 md:pr-44">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui ligula, malesuada vel convallis in, tincidunt ut mi Vestibulum sit amet.</p>
             </div>
             <div className="">
-              <h3 className="text-3xl text-blue-600 font-bold">Connect With Me</h3>
-              <p className="text-lg pt-10 pr-44">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui ligula, malesuada vel convallis in, tincidunt ut mi Vestibulum sit amet.</p>
+              <h3 className="text-3xl text-[#80ccff] font-bold">CONNECT WITH ME</h3>
+              <p className="md:text-lg pt-10 md:pr-44">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui ligula, malesuada vel convallis in, tincidunt ut mi Vestibulum sit amet.</p>
               
               <div className="pt-5">
                 <a type="button" data-twe-ripple-init data-twe-ripple-color="light"
@@ -121,22 +86,22 @@ export default function Home() {
                     </svg>
                   </span>
                 </a>
-
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="skills" className="flex-col h-96">
-        <div className="pt-16">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="">
-              <span className="text-3xl text-blue-600 font-bold">FRONT END SKILLS</span>
+      <section id="skills" className="mt-8 sm:mt-10 flex justify-center">
+        <div className="md:pt-16 md:pl-0 pl-5 pt-20">
+          <div className="grid grid-cols-2 md:gap-32 gap-5">
+            <div>
+              <span className="md:text-3xl text-[#80ccff] font-bold text-2xl">FRONT END SKILLS</span>
               <ul className="text-xl pl-10 list-disc">
                 <li className="pt-5">
                   Typescript
                 </li>
+
                 <li className="pt-2">
                   HTML
                 </li>
@@ -155,7 +120,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="">
-              <span className="text-3xl text-blue-600 font-bold">BACK END SKILLS</span>
+              <span className="md:text-3xl text-[#80ccff] font-bold text-2xl">BACK END SKILLS</span>
               <ul className="text-xl pl-10 list-disc">
                 <li className="pt-5">
                   Python
@@ -175,24 +140,57 @@ export default function Home() {
               </ul>
             </div>
           </div>
+          <div className="grid grid-cols-2 md:gap-32 gap-5 md:pt-10 pt-5">
+          <div>
+              <span className="md:text-3xl text-[#80ccff] font-bold text-2xl">MISC. SKILLS</span>
+              <ul className="text-xl pl-10 list-disc">
+                <li className="pt-5">
+                  Machine Learning (Python)
+                </li>
+                <li className="pt-2">
+                  Tensorflow
+                </li>
+                <li className="pt-2">
+                  Keras
+                </li>
+                <li className="pt-2">
+                  Github
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span className="md:text-3xl text-[#80ccff] font-bold text-2xl">SOFT SKILLS</span>
+              <ul className="text-xl pl-10 list-disc">
+                <li className="pt-5">
+                  Team player
+                </li>
+                <li className="pt-2">
+                  Deliver results
+                </li>
+                <li className="pt-2">
+                  Reliable
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="projects" className="flex-col h-96 items-center">
-        <div className="pt-16">
-          <div className="pr-24">
+      <section id="projects" className="mt-8 sm:mt-10 flex justify-center">
+        <div className="md:pt-16 pt-20">
+          <div>
             <div>
-              <span className="text-3xl text-blue-600 font-bold">Projects</span>
-              <div className="pt-10 grid grid-cols-3 gap-2">
+              <span className="text-3xl text-[#80ccff] font-bold">PROJECTS</span>
+              <div className="pt-10 grid grid-cols-2 md:gap-2 gap-4 md:pl-0 pl-5 md:pr-0 pr-5">
                 <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                  <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="" />
+                  <img className="object-cover w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="" />
                   <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                   </div>
                 </a>
                 <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                  <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="" />
+                  <img className="object-cover w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="" />
                   <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
@@ -207,7 +205,7 @@ export default function Home() {
       <section id="contact" className="flex-col">
         <div className="pt-16">
           <div className="pr-24">
-            <span className="text-3xl text-blue-600 font-bold">Contact Me</span>
+            <span className="text-3xl text-[#80ccff] font-bold">CONTACT ME</span>
           </div>
         </div>
       </section>
