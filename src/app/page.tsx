@@ -25,7 +25,7 @@ export default function Home() {
           <h1 className="text-blue-500 pt-10 break-normal font-bold">Hi! I'm<br />
           <span className="text-3xl text-black"> Deanna Woodhouse-Hawkins</span>
           </h1>
-          <h2 className="text-2xl font-semibold">Full Stack Developer</h2>
+          <h2 className="text-2xl font-semibold">Junior Full Stack Developer</h2>
           <p className="text-lg pt-10 text-slate-500">And recent graduate of the Open University, studying Computing and IT!</p>
           <div className="pt-10 flex-col">
             <ul className="flex flex-wrap text-sm font-medium text-center pb-10 items-start flex-grow">
@@ -38,13 +38,13 @@ export default function Home() {
             </ul>
           </div>
         </div>
-
+{/* image will change*/}
         <div className="w-full sm:w2/3 text-right float-right mt-8 sm:mt-0 md:pl-20 md:pt-2 md:pb-0">
           <img src="https://www.pngall.com/wp-content/uploads/4/Thinking-Woman-PNG-Picture.png" alt="image of me(eventually)" className="relative z-10 flex-shrink-0 resize-none h-auto md:pl-48"></img>
         </div>
 
         <div className="w-0">
-          <span className="justify-end mt-4 -bottom-40 -right-14 md:bottom-10 md:right-16 pb-52 absolute scale-75 md:scale-125">
+          <span className="justify-end mt-4 bottom-5 -right-14 md:bottom-72 md:right-16 absolute scale-75 md:scale-125">
             <svg width="491" height="490" viewBox="0 0 491 490" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="356.5" cy="356.5" r="356.5" fill="#80ccff" />
             </svg>
@@ -52,17 +52,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="mt-8 sm:mt-10 flex justify-center">
+      <section id="about" className="mt-8 sm:mt-10 flex justify-center z-10">
         <div className="pt-16 md:pl-0 pl-5">
           <div className="grid grid-cols-2 gap-1">
             <div className="">
               <span className="text-3xl text-[#80ccff] font-bold">ABOUT ME</span>
-              <h2 className="text-2xl text-black font-semibold pt-10">Phrase Here</h2>
-              <p className="md:text-lg pt-5 md:pr-44">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui ligula, malesuada vel convallis in, tincidunt ut mi Vestibulum sit amet.</p>
+              <h2 className="text-2xl text-black font-semibold pt-10">Continuing Innovation Through Learning New Tech!</h2>
+              <p className="md:text-lg pt-5 md:pr-44">I have always been interested in tech since I was little and it only got worse when I turned 11. I wanted to know how the video games
+                I played were created and, when my secondary school started to teach Computing and IT as a GCSE, I took the chance, which furthered my love for programming.
+                Currently, I’m volunteering as a web developer at a game studio called Wee Tattie Studio and working on a large project, which is furthering my understanding in the backend.
+              </p><br />
+              <p className="md:text-lg pt-5 md:pr-44">On a personal note, I’m an avid gamer and writer in my spare time. I also love to bake and cook to the point my brownies, 
+                cookies and Korean fried chicken have become famous within my family and friends.</p>
             </div>
             <div className="">
               <h3 className="text-3xl text-[#80ccff] font-bold">CONNECT WITH ME</h3>
-              <p className="md:text-lg pt-10 md:pr-44">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui ligula, malesuada vel convallis in, tincidunt ut mi Vestibulum sit amet.</p>
+              <p className="md:text-lg pt-10 md:pr-44">If you wish to contact me, please fill in the contact form
+              <a href="#contact" className="text-blue-500 hover:text-blue-300 hover:underline"> here</a>, which also lists my email address. However, if you want to have a general chat, please use my links below, which take you to my LinkedIn and Github profiles.
+              </p>
               
               <div className="pt-5">
                 <a type="button" data-twe-ripple-init data-twe-ripple-color="light"
@@ -180,20 +187,24 @@ export default function Home() {
         <div className="md:pt-16 pt-20">
           <div>
             <div>
+              {/*projects*/}
               <span className="text-3xl text-[#80ccff] font-bold">PROJECTS</span>
               <div className="pt-10 grid grid-cols-2 md:gap-2 gap-4 md:pl-0 pl-5 md:pr-0 pr-5">
-                <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                  <img className="object-cover w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="" />
+                <a href="https://github.com/Norstar134/my-portfolio-website" target="_blank" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                   <div className="flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">My Portfolio Website</h5>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">This portfolio website is a personal project of mine, allowing me to flex and expand my knowledge the web tech stacks I know.</p>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Skills used: Typescript, React, Tailwind CSS and Next.js</p>
                   </div>
                 </a>
                 <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                  <img className="object-cover w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="" />
+                  <img className="object-contain w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="\timelogging.PNG" alt="" />
                   <div className="flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Time Logging Application for Wee Tattie Studio's</h5>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">This is the biggest project I've worked on so far and is helping me expand my tech stack. The aim of this project is to allow
+                      developers to record their hours to be compensated in the future once the studio gets funding.
+                    </p>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Skills used: Typescript, React, Tailwind CSS, Next.js and Firebase.</p>
                   </div>
                 </a>
               </div>
