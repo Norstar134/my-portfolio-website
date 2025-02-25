@@ -22,7 +22,7 @@ export default function Home() {
           </span>
         </div>
         <div className="w-full md:w-1/3 text-left md:pt-0 pt-10">
-          <h1 className="text-blue-500 pt-10 break-normal font-bold">Hi! I'm<br />
+          <h1 className="text-blue-500 pt-10 break-normal font-bold">Hi! I&apos;m<br />
           <span className="text-3xl text-black"> Deanna Woodhouse-Hawkins</span>
           </h1>
           <h2 className="text-2xl font-semibold">Junior Full Stack Developer and Junior Data Engineer</h2>
@@ -64,9 +64,9 @@ export default function Home() {
               <h2 className="text-2xl text-black font-semibold pt-10">Continuing Innovation Through Learning New Tech!</h2>
               <p className="md:text-lg pt-5 md:pr-44">I have always been interested in tech since I was little and it only got worse when I turned 11. I wanted to know how the video games
                 I played were created and, when my secondary school started to teach Computing and IT as a GCSE, I took the chance, which furthered my love for programming.
-                Currently, I’m volunteering as a web developer at a game studio called Wee Tattie Studio and working on a large project, which is furthering my understanding in the backend.
+                Currently, I&apos;m volunteering as a web developer at a game studio called Wee Tattie Studio and working on a large project, which is furthering my understanding in the backend.
               </p><br />
-              <p className="md:text-lg pt-5 md:pr-44">On a personal note, I’m an avid gamer and writer in my spare time. I also love to bake and cook to the point my brownies, 
+              <p className="md:text-lg pt-5 md:pr-44">On a personal note, I&apos;m an avid gamer and writer in my spare time. I also love to bake and cook to the point my brownies, 
                 cookies and Korean fried chicken have become famous within my family and friends.</p>
             </div>
             <div className="">
