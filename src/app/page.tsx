@@ -36,9 +36,11 @@ export default function Home() {
                 <a href="#contact" className="bg-[#80ccff] hover:bg-[#00ace6] text-white font-bold py-4 px-7 rounded-full">Contact Me </a>
               </li>
               */}
+              {/*
               <li>
                 <a href="./portfolioLogo.png" className="bg-[#80ccff] hover:bg-[#00ace6] text-white font-bold py-4 px-7 rounded-full" download>Download CV</a>
               </li>
+              */}
             </ul>
           </div>
         </div>
@@ -46,7 +48,7 @@ export default function Home() {
         <div className="w-full sm:w2/3 text-right float-right mt-8 sm:mt-0 md:pl-20 md:pt-2 md:pb-0">
         {/*
           <Image src="https://www.pngall.com/wp-content/uploads/4/Thinking-Woman-PNG-Picture.png" alt="image of me(eventually)" className="relative z-10 flex-shrink-0 resize-none h-auto md:pl-48"></Image> */}
-          <Image src="" alt="" className="relative z-10 flex-shrink-0 resize-none h-auto md:pl-48"></Image>
+          <img src="" alt="" className="relative z-10 flex-shrink-0 resize-none h-auto md:pl-48"></img>
         </div>
 
         <div className="w-0">
@@ -204,7 +206,7 @@ export default function Home() {
                   </div>
                 </a>
                 <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                  <Image className="object-contain w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/timelogging.PNG" alt="" />
+                  <img className="object-contain w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/timelogging.PNG" alt="" />
                   <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Time Logging Application for Wee Tattie Studio</h5>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">This is the biggest project I&apos;ve worked on so far and is helping me expand my tech stack. The aim of this project is to allow

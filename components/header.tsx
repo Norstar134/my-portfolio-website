@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     return(
         <header className="sticky flex flex-row items-center justify-between sm:justify-around mx-auto p-4 bg-white top-0 flew-grow shadow z-20 w-auto">
           <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Image src="\portfolioLogo.png" className="h-10" alt="Deanna Woodhouse-Hawkins Logo" />
+          <img src="\portfolioLogo.png" className="h-10" alt="Deanna Woodhouse-Hawkins Logo" />
           </Link>
           <nav className="hidden sm:flex justify-between items-center gap-4">
             <div className="hidden w-full md:block md:w-auto" id="navbar-default">
