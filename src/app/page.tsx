@@ -207,7 +207,7 @@ export default function Home() {
                   <Image className="object-contain w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/timelogging.PNG" alt="" />
                   <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Time Logging Application for Wee Tattie Studio</h5>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">This is the biggest project I've worked on so far and is helping me expand my tech stack. The aim of this project is to allow
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">This is the biggest project I&apos;ve worked on so far and is helping me expand my tech stack. The aim of this project is to allow
                       developers to record their hours to be compensated in the future once the studio gets funding.
                     </p>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Skills used: Typescript, React, Tailwind CSS, Next.js and Firebase.</p>
