@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="bg-white dark:bg-slate-800">
       <div className="container mx-auto">
-        <section id="home" className="flex flex-col md:h-auto sm:justify-between items-center sm:flex-row z-10">
+        <section id="home" className="flex flex-col md:h-auto sm:justify-between items-center sm:flex-row z-10 mb-64">
         <div className="w-0">
           <span className="ml-32 mt-16 absolute md:top-5 md:-left-32 -z-0 scale-50 md:scale-100 -top-2 -left-36 md:opacity-100 opacity-60">
             <svg width="48" height="95" viewBox="0 0 48 95" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,13 +25,15 @@ export default function Home() {
           <h1 className="text-blue-500 pt-10 break-normal font-bold">Hi! I'm<br />
           <span className="text-3xl text-black"> Deanna Woodhouse-Hawkins</span>
           </h1>
-          <h2 className="text-2xl font-semibold">Junior Full Stack Developer</h2>
+          <h2 className="text-2xl font-semibold">Junior Full Stack Developer and Junior Data Engineer</h2>
           <p className="text-lg pt-10 text-slate-500">And recent graduate of the Open University, studying Computing and IT!</p>
           <div className="pt-10 flex-col">
             <ul className="flex flex-wrap text-sm font-medium text-center pb-10 items-start flex-grow">
+              {/*
               <li className="me-10 pl-5">
                 <a href="#contact" className="bg-[#80ccff] hover:bg-[#00ace6] text-white font-bold py-4 px-7 rounded-full">Contact Me </a>
               </li>
+              */}
               <li>
                 <a href="./portfolioLogo.png" className="bg-[#80ccff] hover:bg-[#00ace6] text-white font-bold py-4 px-7 rounded-full" download>Download CV</a>
               </li>
@@ -40,7 +42,9 @@ export default function Home() {
         </div>
 {/* image will change*/}
         <div className="w-full sm:w2/3 text-right float-right mt-8 sm:mt-0 md:pl-20 md:pt-2 md:pb-0">
-          <img src="https://www.pngall.com/wp-content/uploads/4/Thinking-Woman-PNG-Picture.png" alt="image of me(eventually)" className="relative z-10 flex-shrink-0 resize-none h-auto md:pl-48"></img>
+        {/*
+          <img src="https://www.pngall.com/wp-content/uploads/4/Thinking-Woman-PNG-Picture.png" alt="image of me(eventually)" className="relative z-10 flex-shrink-0 resize-none h-auto md:pl-48"></img> */}
+          <img src="" alt="" className="relative z-10 flex-shrink-0 resize-none h-auto md:pl-48"></img>
         </div>
 
         <div className="w-0">
@@ -67,8 +71,8 @@ export default function Home() {
             </div>
             <div className="">
               <h3 className="text-3xl text-[#80ccff] font-bold">CONNECT WITH ME</h3>
-              <p className="md:text-lg pt-10 md:pr-44">If you wish to contact me, please fill in the contact form
-              <a href="#contact" className="text-blue-500 hover:text-blue-300 hover:underline"> here</a>, which also lists my email address. However, if you want to have a general chat, please use my links below, which take you to my LinkedIn and Github profiles.
+              <p className="md:text-lg pt-10 md:pr-44">If you wish to contact me, please contact me using either LinkedIn or Github.
+              {/*<a href="#contact" className="text-blue-500 hover:text-blue-300 hover:underline"> here.</a> However, if you want to have a general chat, please use my links below, which take you to my LinkedIn and Github profiles. */}
               </p>
               
               <div className="pt-5">
@@ -197,7 +201,7 @@ export default function Home() {
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Skills used: Typescript, React, Tailwind CSS and Next.js</p>
                   </div>
                 </a>
-                <a href="/timeloggingApp" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                   <img className="object-contain w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/timelogging.PNG" alt="" />
                   <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Time Logging Application for Wee Tattie Studio</h5>
@@ -213,6 +217,7 @@ export default function Home() {
         </div>
       </section>
 
+{/*
       <section id="contact" className="flex-col">
         <div className="py-8 md:py-16 px-4 mx-auto max-w-screen-md">
             <span className="text-3xl text-[#80ccff] font-bold">CONTACT ME</span>
@@ -234,6 +239,7 @@ export default function Home() {
             </form>
           </div>
       </section>
+      */}
 
       </div>
     </main>
